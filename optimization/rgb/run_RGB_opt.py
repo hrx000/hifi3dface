@@ -216,6 +216,7 @@ def RGB_opt(_):
     os.environ["CUDA_VISIBLE_DEVICES"] = FLAGS.GPU_NO
     # load 3DMM
     if FLAGS.is_bfm is False:
+        #it is true
         basis3dmm = load_3dmm_basis(
             FLAGS.basis3dmm_path,
             FLAGS.uv_path,
